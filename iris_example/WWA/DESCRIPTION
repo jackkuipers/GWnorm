@@ -1,0 +1,10 @@
+Package: WWA
+Type: Package
+Title: R version of the WWA algorithm
+Version: 1.0
+Date: 2025-06-20
+Authors@R: person("Jack", "Kuipers", role = c("aut", "cre"), email = "jack.kuipers@bsse.ethz.ch")
+Description: Package wrapper of some of the code of Willem van de Boom from https://github.com/willemvandenboom/graph-of-graphs .
+License: GPL (>= 2)
+Imports: Rcpp, RcppBlaze, abind, BH, CholWishart, latticeExtra, matrixStats, mvtnorm, withr
+LinkingTo: Rcpp, RcppBlaze, BH

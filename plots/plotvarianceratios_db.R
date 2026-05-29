@@ -27,7 +27,7 @@ plot_df <- rbind(plot_df, plot_df_p)
 }
 }
 
-exact_val <- 1e8
+exact_val <- 1e9
 fail_val <- 1e10
 # clean up some fail values
 plot_df %>% mutate(exact_BD = if_else(is.na(exact_BD), 0, exact_BD)) %>% 
@@ -44,7 +44,7 @@ p <- ggplot(plot_df_clean, aes(x = as.factor(p), y = rat)) +
   scale_y_log10() + 
   #coord_cartesian(ylim = c(1e-3, 1e8)) + 
   geom_hline(yintercept = 1) + xlab("p") + ylab("Variance ratio") +
-  scale_shape_manual(values = c(`0.0` = 16, `0.1` = 4, `1.0` = 3)) + 
+  scale_shape_manual(values = c(`0.0` = 16, `0.1` = 4, `1.0` = 5)) + 
   theme_bw() + guides(shape = "none") +
   facet_grid(dl ~ beta, 
     labeller = labeller(

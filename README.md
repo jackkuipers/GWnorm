@@ -17,3 +17,7 @@ Examples for the first figure can be run with the `examples_figure1.R` file, whi
 ### Simulations
 
 The main simulations run from the files `comparison_prime.R` and `comparison_density.R`, with the simulations results stored in the **sim_results** folder and plotted in the **plots** folder. 
+
+### Special cases
+
+Code to check and count the special cases is in the **special_case_count** folder, with the `.Rdata` file storing the results for Table 1. This is superceded by functionality in the [_GWnorm_](https://CRAN.R-project.org/package=GWnorm) package to evaluate the normalising constant for those cases, as in the Examples above.
